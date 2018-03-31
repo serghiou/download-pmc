@@ -1,6 +1,21 @@
-# Download PucMed Central articles with meta-data
+# Download PubMed Central articles with meta-data
 
-## Download one article at a time
+The [PMC Open Access Subset](https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/) is a part of the total collection of articles in PMC. The articles in the OA Subset are made available under a Creative Commons or similar license that generally allows more liberal redistribution and reuse than a traditional copyrighted work. PubMed Central maintains a database of all open access articles, for each of which it holds: an XML with all relevant meta-data, all images, its PDF version and all of its supplementary files, if any. These data can be downloaded using two services: the [PMC OAI service](https://www.ncbi.nlm.nih.gov/pmc/tools/oai/) or the [PMC FTP service](https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/). The PMC OAI service provides access to metadata of all items in the PubMed Central (PMC) archive, as well as to the full text of a subset of these items.
+
+## To download all XML and TXT files
+
+.txt files contain the extracted abstract, full text and tables from each article. .xml files contain  
+
+ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/
+
+Run the following in your Terminal to decompress the files you create into a folder called "MyFiles"
+
+```
+mkdir MyFiles
+tar -xvf non_comm_use.0-9A-B.txt.tar.gz -C MyFiles
+```
+
+## To download one article at a time
 
 1. Visit the [Open Access Subset](https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/) website of PubMed Central.
 
