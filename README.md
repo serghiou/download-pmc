@@ -36,3 +36,7 @@ To download the .xml file as above for article with PMC 156895 use:
 https://www.ncbi.nlm.nih.gov/pmc/oai/oai.cgi?verb=GetRecord&identifier=oai:pubmedcentral.nih.gov:156895&metadataPrefix=pmc
 
 For more examples on what can be done using the PMC OAI service, visit its [website](https://www.ncbi.nlm.nih.gov/pmc/tools/oai/).
+
+## Web of Science API
+
+The [lite](http://ipscience-help.thomsonreuters.com/wosWebServicesLite/WebServicesLiteOverviewGroup/Introduction.html) API, which does not need you to sign in, and the [expanded](http://ipscience-help.thomsonreuters.com/wosWebServicesExpanded/WebServicesExpandedOverviewGroup/Introduction.html?elqTrackId=a649713d9d1a410297668ee1b83a97ce&elqaid=3746&elqat=2) API, which does.
