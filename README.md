@@ -4,15 +4,19 @@ The [PMC Open Access Subset](https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/)
 
 ## To download all XML and TXT files
 
-.txt files contain the extracted abstract, full text and tables from each article. .xml files contain  
+These files contain the extracted abstract, full text, tables and references for each article. They are available in either .xml or .txt format. 
 
-ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/
-
-Run the following in your Terminal to decompress the files you create into a folder called "MyFiles"
+To download manually, go to ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/ and download your collections of interest. Then, run the following in your terminal to decompress the files you downloaded into a folder called "data".
 
 ```
-mkdir MyFiles
-tar -xvf non_comm_use.0-9A-B.txt.tar.gz -C MyFiles
+mkdir data
+tar -xvf non_comm_use.0-9A-B.txt.tar.gz -C data
+```
+
+To download automatically in .xml, run the following shell script provided on this repository in your terminal within the directory (i.e. folder) you'd like to save these data.
+
+```
+sh pmc_download.sh
 ```
 
 ## To download one article at a time
