@@ -2,7 +2,7 @@
 
 The [PMC Open Access Subset](https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/) is a part of the total collection of articles in PMC. The articles in the OA Subset are made available under a Creative Commons or similar license that generally allows more liberal redistribution and reuse than a traditional copyrighted work. PubMed Central maintains a database of all open access articles, for each of which it holds: an XML with all relevant meta-data, all images, its PDF version and all of its supplementary files, if any. These data can be downloaded using two services: the [PMC OAI service](https://www.ncbi.nlm.nih.gov/pmc/tools/oai/) or the [PMC FTP service](https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/). The PMC OAI service provides access to metadata of all items in the PubMed Central (PMC) archive, as well as to the full text of a subset of these items.
 
-## To download all XML and TXT files
+## To download all XML and TXT files on PMC
 
 These files contain the extracted abstract, full text, tables, references and meta-data (e.g. date of publication, type of publication, etc.) for each article. They are available in either .xml or .txt format. 
 
@@ -19,13 +19,13 @@ To download automatically in .xml, run the following shell script provided on th
 sh pmc_download.sh
 ```
 
-## To download one article package at a time
+## To download article packages from PMC
 
-1. Visit the [Open Access Subset](https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/) website of PubMed Central.
+Article packages contain the .xml file, the .pdf file, all images and all supplementary material of an article. All material and explanations on how to download open access article packages can be found on the [Open Access Subset](https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/) website of PubMed Central. Briefly:
 
-2. Download a CSV file with a reference to every article on PMC and their respective file names using the PMC FTP service [here](ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_file_list.csv).
+1. Identify the names of the packages of the articles we are interested in. To do so, download the .csv file from [here](ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_file_list.csv) and look at the column named "File". Note that this is a very large file.
 
-3. Example website to download file **oa_package/08/e0/PMC13900.tar.gz**:
+3. Use the name of each article identified above to download its pacakge. For example, to download the package **oa_package/08/e0/PMC13900.tar.gz**, do:
 
     ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/08/e0/PMC13900.tar.gz
   
