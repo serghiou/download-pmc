@@ -6,7 +6,7 @@ The [PMC Open Access Subset](https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/)
 
 These files contain the extracted abstract, full text, tables, references and meta-data (e.g. date of publication, type of publication, etc.) for each article. They are available in either .xml or .txt format. 
 
-To download manually, go to ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/ and download your collections of interest. Then, run the following in your terminal to decompress the files you downloaded into a folder called "data".
+To download manually, go to ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/ and download your collections of interest. Then, run the following in your terminal for *each* file you downloaded to decompress it into a folder called "data". You should only run the `mkdir data` command once.
 
 ```
 mkdir data
