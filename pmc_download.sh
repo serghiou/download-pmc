@@ -1,5 +1,5 @@
-mkdir pmc_data
-cd pmc_data
+mkdir data
+cd data
 
 # Download XML files for commerical use
 curl ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/comm_use.A-B.xml.tar.gz
