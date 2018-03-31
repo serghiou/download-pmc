@@ -19,7 +19,7 @@ To download automatically in .xml, run the following shell script provided on th
 sh pmc_download.sh
 ```
 
-## To download one article at a time
+## To download one article package at a time
 
 1. Visit the [Open Access Subset](https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/) website of PubMed Central.
 
@@ -27,4 +27,12 @@ sh pmc_download.sh
 
 3. Example website to download file **oa_package/08/e0/PMC13900.tar.gz**:
 
-  ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/08/e0/PMC13900.tar.gz
+    ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/08/e0/PMC13900.tar.gz
+  
+## To download one article .xml at a time
+
+To download the .xml file as above for article with PMC 156895 use:
+
+https://www.ncbi.nlm.nih.gov/pmc/oai/oai.cgi?verb=GetRecord&identifier=oai:pubmedcentral.nih.gov:156895&metadataPrefix=pmc
+
+For more examples on what can be done using the PMC OAI service, visit its [website](https://www.ncbi.nlm.nih.gov/pmc/tools/oai/).
